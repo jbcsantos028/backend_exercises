@@ -13,7 +13,6 @@ h[:e] = 5
 p h
 =end
 
-=begin
 #Solution to no. 3
 contact_data = [["john@email.com", "123 Main st.", "555-123-4567"],
 ["avion@email.com", "404 Not Found Dr.", "123-234-3454"]]
@@ -29,5 +28,4 @@ contacts["Avion School"].store(:address, contact_data[1][1])
 contacts["Avion School"].store(:phone, contact_data[1][2])
 
 p contacts
-=end
 
