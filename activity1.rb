@@ -8,6 +8,7 @@ array_sample.each { |element| puts "Current number is: #{element}" }
 #Solution to no. 2
 h = {a:1, b: 2, c:3, d:4}
 puts "The value of key:b is #{h[:b]}"
+puts "adding a new item..."
 h[:e] = 5
 p h
 =end
