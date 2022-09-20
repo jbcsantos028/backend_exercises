@@ -13,6 +13,7 @@ h[:e] = 5
 p h
 =end
 
+
 =begin
 #Solution to no. 3
 contact_data = [["john@email.com", "123 Main st.", "555-123-4567"],
