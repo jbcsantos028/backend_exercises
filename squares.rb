@@ -10,4 +10,4 @@ def isPerfectSquare(number)
   end
 end
 
-isPerfectSquare(484)
+isPerfectSquare(0)
