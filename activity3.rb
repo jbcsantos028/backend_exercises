@@ -10,7 +10,7 @@ class Student
 
   def set_enrollment
     @enrollment = true
-    puts "#{@name} has enrolled."
+    puts "#{@name} has enrolled.\nEnrollment Status: #{@enrollment}"
   end
 
   def add_units(num_of_units_to_add)
@@ -23,6 +23,5 @@ first_student = Student.new("Joseph Santos", "2022143143", 15)
 second_student = Student.new("Miguel Santos", "2022123123", 12)
 third_student = Student.new("Jas Santos", "2022111111", 18)
 
-p first_student
-p second_student
-p third_student
+first_student.set_enrollment
+first_student.add_units(5)

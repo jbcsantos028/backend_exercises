@@ -1,13 +1,9 @@
-def isPerfectSquare(number)
-  interval = 0..10000
+def is_perfect_square(number)
+  interval = 0..number
   interval.each do |i|
-    if i ** 2 == number
-      puts "#{number} is perfect square"
-      break
-    elsif i == interval.last && i ** 2 != number
-      puts "#{number} is not perfect square"
-    end
+      return true if i ** 2 == number 
   end
+  false
 end
 
-isPerfectSquare(0)
+p is_perfect_square(1234)
