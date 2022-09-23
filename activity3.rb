@@ -25,3 +25,20 @@ third_student = Student.new("Jas Santos", "2022111111", 18)
 
 first_student.set_enrollment
 first_student.add_units(5)
+
+puts
+puts
+
+p first_student.instance_variables
+
+puts
+puts
+
+p first_student.name
+p first_student.student_no
+p first_student.num_of_units
+
+puts
+
+first_student.name = "Hose Santos"
+p first_student.name
