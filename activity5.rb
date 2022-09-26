@@ -5,7 +5,8 @@ class Confection
 end
 
 class Cupcake < Confection
-  def frost
+  def prepare
+    super
     puts "Apply frosting"
   end
 end
@@ -15,7 +16,6 @@ end
 
 cupcake = Cupcake.new
 cupcake.prepare
-cupcake.frost
 
 banana_cake = BananaCake.new
 banana_cake.prepare

@@ -22,7 +22,7 @@ class User
   end
 
   def change_password=(new_password)
-    password = new_password
+    @password = new_password
   end
 
   protected
@@ -78,9 +78,10 @@ my_admin.admin_login
 my_admin.edit_users_profile
 
 my_admin.change_password = 'new_password'
-
+puts my_admin.password
 buyer = Buyer.new('juan', 'password', '127.0.0.1')
 buyer.buyer_login
 buyer.buy
 
 buyer.change_password = 'new_password'
+puts buyer.password
