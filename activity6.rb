@@ -44,6 +44,7 @@ class Admin < User
     if username_input == username && password_input == password
       login
       login_status = true
+      puts login_status
     else
       puts "Wrong admin credentials. Try logging in again."
     end
@@ -63,6 +64,7 @@ class Buyer < User
     if username_input == username && password_input == password
       login
       login_status = true
+      puts login_status
     else
       puts "Wrong buyer credentials. Try logging in again."
     end
