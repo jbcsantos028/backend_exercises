@@ -1,16 +1,16 @@
-def unique_in_order(string)
+def unique_in_order(sequence)
   list = []
   ctr = 0
-  if string.class == Array
-    string.each do |i|
+  if sequence.class == Array
+    sequence.each do |i|
       if i != list[ctr - 1]
         list << i
         ctr += 1
       end
     end
   end
-  if string.class == String
-    string.each_char do |char|
+  if sequence.class == String
+    sequence.each_char do |char|
       if char != list[ctr - 1]
         list << char
         ctr += 1
